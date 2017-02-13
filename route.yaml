@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Route
+metadata:
+  name: php-demo-app
+spec:
+  to:
+    kind: Service
+    name: php-demo-app
