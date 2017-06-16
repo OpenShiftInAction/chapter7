@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv01
+  annotations:
+    volume.beta.kubernetes.io/mount-options: rw,nfsvers=4,noexec 
+spec:
+  capacity:
+    storage: 5Gi 
+  accessModes:
+  - ReadWriteMany 
+  nfs: 
+    path: /nfs-data
+    server: 192.168.122.100 
+  persistentVolumeReclaimPolicy: Recycle  
