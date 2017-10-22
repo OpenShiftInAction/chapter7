@@ -1,3 +1,3 @@
-Chapter 3 files and snippets
+Chapter 7 examples and files
 
 
